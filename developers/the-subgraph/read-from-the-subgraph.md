@@ -2,7 +2,7 @@
 
 ### Code
 
-Let's go back into our [whitelabel-starter](https://github.com/simpleweb/whitelabel-starter) project from the [Create a release](../the-factory/create-a-release.md) section and add a file called `subgraph.js`. Add the following code to the file:
+Let's go back into our [whitelabel-starter](https://github.com/simpleweb/whitelabel-starter) project from the [Create a release](../the-factory/create-a-release.md) section and add a file called `subgraph.js` root of the whitelabel-starter project. Add the following code to the file:
 
 ```
 const { gql, request } = require("graphql-request");
@@ -33,7 +33,7 @@ async function main() {
 main();
 ```
 
-Save the file and run node `subgraph.js`. You should see a list of `mediaItems` logged in your console.&#x20;
+Save the file and run `node subgraph.js`. You should see a list of `mediaItems` logged in your console.&#x20;
 
 ```
 {
@@ -66,11 +66,11 @@ Save the file and run node `subgraph.js`. You should see a list of `mediaItems` 
                 },
 ```
 
-Now let's find your release. You will need the contract address of your release. You can get this from [PolygonScan (Mumbai) explorer](https://mumbai.polygonscan.com).&#x20;
+Now let's find your release. For this, you will need the contract address of your release. You can get this from [PolygonScan (Mumbai) explorer](https://mumbai.polygonscan.com).&#x20;
 
 ![](<../../.gitbook/assets/Screenshot 2022-03-10 at 09.55.30.png>)
 
-Now let's go back into the `subgraph.js` file and slightly amend our main function. We need to pass our contract address from the request into our query. Replace the **`id`** below with your contract address (release id).&#x20;
+Now let's go back into the `subgraph.js` file and slightly amend our main function. Replace the **`id`** below with your contract address from [PolygonScan (Mumbai) explorer](https://mumbai.polygonscan.com).
 
 ```
 async function main() {
@@ -91,11 +91,13 @@ async function main() {
   await request(
     "https://api.thegraph.com/subgraphs/name/tinypell3ts/music-factory",
     query,
-    { id: "0x509dbec44331e44749ae80a4e0c27a7c16aefb57" } // replace this ID
+    { id: "0x509dbec44331e44749ae80a4e0c27a7c16aefb57" } // replace this ID with your own contract address
   )
     .then((data) => console.log(JSON.stringify(data, null, "\t")))
     .catch((err) => console.log(err));
 }
+
+main()
 ```
 
 Save the file and run `node subgraph.js`. You should now only see your release logged in the console.&#x20;
