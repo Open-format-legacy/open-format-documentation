@@ -11,9 +11,12 @@
 
 ## 👨💻 Developers
 
+* [🏭 The Factory](developers/the-factory/README.md)
+  * [Create a release](developers/the-factory/create-a-release.md)
+  * [Deployment Arguments](developers/the-factory/deployment-arguments.md)
+* [📈 The Subgraph](developers/the-subgraph/README.md)
+  * [Read from the subgraph](developers/the-subgraph/read-from-the-subgraph.md)
 * [🍜 Recipes](developers/recipes.md)
-* [🏭 The Factory](developers/the-factory.md)
-* [📈 The Subgraph](developers/the-subgraph.md)
 
 ## Resources
 

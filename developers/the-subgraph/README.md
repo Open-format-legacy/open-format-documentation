@@ -13,5 +13,5 @@ Whitelabel utilises [The Graph](https://thegraph.com) to collect, process and st
 **Subgraph playground:**
 
 {% hint style="info" %}
-[https://thegraph.com/hosted-service/subgraph/tinypell3ts/music-factory?query=Full%20Release](https://thegraph.com/hosted-service/subgraph/tinypell3ts/music-factory?query=Full%20Release)
+[https://thegraph.com/hosted-service/subgraph/tinypell3ts/music-factory](https://thegraph.com/hosted-service/subgraph/tinypell3ts/music-factory)
 {% endhint %}
