@@ -25,7 +25,7 @@ To create a release you need to deploy a version of our [Factory contract](https
 1. `git clone` [`https://github.com/simpleweb/whitelabel-starter.git`](https://github.com/simpleweb/whitelabel-starter.git)``
 2. `cd whitelabel-starter`
 3. `yarn install`` `**`OR`**` ``npm install`
-4. `cp .env.example > .env`&#x20;
+4. `cp .env.example .env`
 5. Open the project in your favourite code editor. We recommend [Visual Studio Code](https://code.visualstudio.com).
 
 ### Environment Setup
